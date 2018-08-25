@@ -7,10 +7,10 @@ module.exports = {
 	module : {
 		rules: [
 			{
-				test: '/\.jsx?$/',
+				test: /\.jsx?$/,
 				loader: 'babel-loader',
-				exclude: __dirname + '/node_modules/'
+				exclude: /node_modules/,
 			}
 		]
 	}
-}
+};
